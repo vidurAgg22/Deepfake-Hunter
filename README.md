@@ -62,14 +62,14 @@ DeepFakeHunter/
             └── (images)
 ```
 
-**Note**: The `dataset/` folder is not included in the repository. You'll need to download the dataset and add it manually after cloning the repository. The `models/` folder will be created and populated when you run `train_models.py`.
+**Note**: The `dataset/` folder is not included in the repository. You'll need to download the dataset(https://www.kaggle.com/datasets/manjilkarki/deepfake-and-real-images) and add it manually after cloning the repository. The `models/` folder will be created and populated when you run `train_models.py`.
 
 ## 📥 Installation
 To set up the project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/deepfake-hunter.git
+   git clone https://github.com/vidurAgg22/deepfake-hunter.git
    cd deepfake-hunter
    ```
 
@@ -107,7 +107,4 @@ To set up the project locally, follow these steps:
 5. View the classification result immediately on the interface.
 
 ## 🤝 Contributing
-Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss changes.
-
-## 📄 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss changes or improvements.
