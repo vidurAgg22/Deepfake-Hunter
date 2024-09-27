@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>DeepFake Hunter</title>
+</head>
+<body>
+    <div class="container text-center">
+        <h1>DeepFake Hunter: Classify Images</h1>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <select name="model" required>
+                <option value="KNN">KNN Model</option>
+                <option value="SVM">SVM Model</option>
+                <option value="Random Forest">Random Forest Model</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Classify Image</button>
+        </form>
+
+        {% if prediction is not none %}
+            <div class="mt-4">
+                <h3>The image is classified as {{ 'FAKE' if prediction == 1 else 'REAL' }}.</h3>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
