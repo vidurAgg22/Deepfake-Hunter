@@ -37,7 +37,7 @@ DeepFakeHunter/
 ├── README.md              # This file
 ├── static/
 │   ├── styles.css         # CSS file for styling
-│   └── uploads/           # Folder for storing uploaded files (created automatically)
+│   └── uploads/           # Folder for storing uploaded files (create manually)
 ├── templates/
 │   └── index.html         # HTML file for the front end
 ├── models/                # Folder for storing trained models (created by train_models.py)
@@ -86,7 +86,7 @@ To set up the project locally, follow these steps:
 
 4. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/manjilkarki/deepfake-and-real-images) and place it in the `dataset/` folder, following the structure shown above.
 
-5. Train the models by running:
+5. Train the models by running: 
    ```bash
    python train_models.py
    ```
